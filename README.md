@@ -13,3 +13,4 @@ To run the app locally:
 3. After installing dependencies, do 'npm run dev'
 
 Feel free to contribute!
+# amazing-taskify-app-demo
