@@ -1,4 +1,4 @@
-name: Basic Docker Image
+name: create basic container build
 
 on: 
   push:
