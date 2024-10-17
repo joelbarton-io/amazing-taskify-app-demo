@@ -1,4 +1,4 @@
-name: build node app and create docker image with docker action/cache
+name: build node app & create docker image with docker action/cache
 
 on: [] # currently no triggers
   # push:
