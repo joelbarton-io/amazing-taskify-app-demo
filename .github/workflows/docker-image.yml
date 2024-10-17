@@ -1,0 +1,30 @@
+name: build node app and create docker image with docker action/cache
+
+on: [] # currently no triggers
+  # push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: |
+          npm install  # Install Node.js dependencies
+
+      - name: Build Node.js project
+        run: |
+          npm run build  # Replace with your build command (e.g., npm run build)
+
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
