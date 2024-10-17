@@ -14,3 +14,5 @@ To run the app locally:
 
 Feel free to contribute!
 # amazing-taskify-app-demo
+
+> BINGBONG!!
