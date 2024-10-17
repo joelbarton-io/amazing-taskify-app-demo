@@ -1,4 +1,4 @@
-name: create basic container build
+name: workflow with depot
 
 on: []
   # push:
